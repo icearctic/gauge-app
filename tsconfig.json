@@ -1,0 +1,15 @@
+{
+  "extends": "@quasar/app-vite/tsconfig-preset",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"],
+      "@capacitor/*": ["./src-capacitor/node_modules/@capacitor/*"],
+      "@awesome-cordova-plugins/applovin": ["./src-capacitor/node_modules/@awesome-cordova-plugins/applovin"],
+      "@awesome-cordova-plugins/email-composer": ["./src-capacitor/node_modules/@awesome-cordova-plugins/email-composer"],
+      "@awesome-cordova-plugins/in-app-purchase-2": ["./src-capacitor/node_modules/@awesome-cordova-plugins/in-app-purchase-2"],
+      "capacitor-rate-app": ["./src-capacitor/node_modules/capacitor-rate-app"],
+      "cordova-plugin-purchase": ["./src-capacitor/node_modules/cordova-plugin-purchase"]
+    }
+  }
+}
